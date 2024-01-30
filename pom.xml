@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>se.bjurr.bom</groupId>
 	<artifactId>bjurr-bom</artifactId>
-	<version>0.9.7-SNAPSHOT</version>
+	<version>0.9.7</version>
 	<packaging>pom</packaging>
 	<name>Bjurr BOM</name>
 	<description>My BOM.</description>
@@ -12,7 +12,7 @@
 	<scm>
 		<developerConnection>scm:git:git@github.com:tomasbjerre/bjurr-bom.git</developerConnection>
 		<url>https://github.com/tomasbjerre/bjurr-bom</url>
-		<tag>bjurr-bom-0.7.11</tag>
+		<tag>0.9.7-SNAPSHOT</tag>
 	</scm>
 
 	<distributionManagement>
@@ -46,7 +46,7 @@
 		<maven.compiler.target>11</maven.compiler.target>
 		<maven.compiler.source>11</maven.compiler.source>
 		<maven.compiler.parameters>true</maven.compiler.parameters>
-		<changelog.version>1.100.6</changelog.version>
+		<changelog.version>2.0.1-SNAPSHOT</changelog.version>
 		<gpg.version>3.0.1</gpg.version>
 		<fmt.version>2.20</fmt.version>
 		<violations.version>1.50.8</violations.version>
