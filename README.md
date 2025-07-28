@@ -12,6 +12,13 @@ You may want to use the [Maven wrapper](https://maven.apache.org/wrapper):
 ./mvnw wrapper:wrapper -Dmaven=3.8.1
 ```
 
+## Show updates
+
+```sh
+./mvnw versions:display-dependency-updates
+./mvnw versions:display-plugin-updates
+```
+
 ## Update dependencies
 
 ```sh
