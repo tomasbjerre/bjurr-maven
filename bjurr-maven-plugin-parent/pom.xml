@@ -38,33 +38,4 @@
     </dependency>
   </dependencies>
 
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-plugin-plugin</artifactId>
-        <version>3.6.4</version>
-        <configuration>
-          <goalPrefix>git-changelog-maven-plugin</goalPrefix>
-          <skipErrorNoDescriptorsFound>true</skipErrorNoDescriptorsFound>
-          <helpPackageName>gitchangelog.helpmojo</helpPackageName>
-        </configuration>
-        <executions>
-          <execution>
-            <id>mojo-descriptor</id>
-            <goals>
-              <goal>descriptor</goal>
-            </goals>
-          </execution>
-          <execution>
-            <id>gitchangelog-goal</id>
-            <goals>
-              <goal>helpmojo</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-    </plugins>
-  </build>
-
 </project>
