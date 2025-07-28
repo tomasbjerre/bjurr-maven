@@ -1,55 +1,54 @@
-# Bjurr BOM
+# Bjurr Maven
 
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/se.bjurr.bom/bjurr-bom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/se.bjurr.bom/bjurr-bom)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/se.bjurr.maven/bjurr-maven/badge.svg)](https://maven-badges.herokuapp.com/maven-central/se.bjurr.maven/bjurr-maven)
 
-Common Maven settings for my projects. Example usage [here](https://github.com/tomasbjerre/assertj-snapshot).
+Common Maven settings for my projects.
 
 ## Get Maven
 
 You may want to use the [Maven wrapper](https://maven.apache.org/wrapper):
 
 ```sh
-mvn wrapper:wrapper -Dmaven=3.8.1
+./mvnw wrapper:wrapper -Dmaven=3.8.1
 ```
 
 ## Update dependencies
 
 ```sh
-./mvnw versions:update-properties
+./mvnw versions:use-latest-versions \
+  -DallowSnapshots=false \
+  -DregexVersion='^\d+(\.\d+)*(-Final)?$' \
+  -DgenerateBackupPoms=false
 ```
 
-## Import the BOM
+## Set exact version in poms
 
-You can add the BOM as a dependency:
-
-```xml
-<project>
-    <!--- ... //-->
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>se.bjurr.bom</groupId>
-                <artifactId>bjurr-bom</artifactId>
-                <version>X</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-</project>
+```sh
+./mvnw versions:set \
+ -DnewVersion=latest-SNAPSHOT \
+ -DgenerateBackupPoms=false
 ```
 
-Or as a parent:
+## Usage
+
+As a parent in a library:
 
 ```xml
-<project>
-    <parent>
-        <groupId>se.bjurr.bom</groupId>
-        <artifactId>bjurr-bom</artifactId>
-        <version>X</version>
-    </parent>
-    <!--- ... //-->
-</project>
+<parent>
+    <groupId>se.bjurr.maven</groupId>
+    <artifactId>bjurr-maven-library-parent</artifactId>
+    <version>X</version>
+</parent>
+```
+
+As a parent in a Maven plugin:
+
+```xml
+<parent>
+    <groupId>se.bjurr.maven</groupId>
+    <artifactId>bjurr-maven-plugin-parent</artifactId>
+    <version>X</version>
+</parent>
 ```
 
 ## Static code analysis
@@ -57,7 +56,7 @@ Or as a parent:
 Spotbugs is bundled. Violations can be ignored with `@SuppressFBWarnings`. Also [Violations Maven Plugin](https://github.com/tomasbjerre/violations-maven-plugin) is used to present, and fail build based on, violations.
 
 ```
-mvn verify 
+./mvnw verify 
 ```
 
 May fail the build with:
@@ -126,7 +125,10 @@ Summary
 Release and sign with:
 
 ```sh
- ./mvnw se.bjurr.gitchangelog:git-changelog-maven-plugin:semantic-version \
+#!/bin/bash
+
+./mvnw se.bjurr.gitchangelog:git-changelog-maven-plugin:semantic-version \
+  && git commit -a -m "chore: setting version in pom" && git push || echo "No new version" \
   && ./mvnw release:prepare release:perform -B \
   && ./mvnw se.bjurr.gitchangelog:git-changelog-maven-plugin:git-changelog \
   && git commit -a -m "chore: updating changelog" \
