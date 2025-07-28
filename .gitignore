@@ -10,7 +10,6 @@ target
 *.log
 *.bak
 *~
-work*
 bin
 gradle
 gradlew
