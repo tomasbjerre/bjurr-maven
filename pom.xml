@@ -52,25 +52,42 @@
     <maven.compiler.target>11</maven.compiler.target>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.parameters>true</maven.compiler.parameters>
+
+    <!-- Dependency Versions -->
+    <assertj.version>4.0.0-M1</assertj.version>
+    <spotbugs.annotations.version>4.9.3</spotbugs.annotations.version>
+
+    <!-- Plugin Versions -->
+    <sortpom.version>4.0.0</sortpom.version>
+    <surefire.version>3.5.3</surefire.version>
+    <eclipse.version>2.10</eclipse.version>
+    <javadoc.version>3.11.2</javadoc.version>
+    <source.plugin.version>3.3.1</source.plugin.version>
+    <release.plugin.version>3.1.1</release.plugin.version>
+    <central.publishing.version>0.8.0</central.publishing.version>
     <changelog.version>2.2.10</changelog.version>
-    <gpg.version>3.0.1</gpg.version>
     <fmt.version>2.27</fmt.version>
-    <violations.version>2.2.7</violations.version>
-    <violations.maxViolations>0</violations.maxViolations>
     <spotbugs.version>4.9.3.2</spotbugs.version>
+    <pmd.version>3.27.0</pmd.version>
+    <checkstyle.version>3.6.0</checkstyle.version>
+    <violations.version>2.2.8</violations.version>
+    <gpg.version>3.0.1</gpg.version>
+
+    <!-- Other Properties -->
+    <violations.maxViolations>0</violations.maxViolations>
   </properties>
 
   <dependencies>
     <dependency>
       <groupId>org.assertj</groupId>
       <artifactId>assertj-core</artifactId>
-      <version>3.27.3</version>
+      <version>${assertj.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>com.github.spotbugs</groupId>
       <artifactId>spotbugs-annotations</artifactId>
-      <version>4.9.3</version>
+      <version>${spotbugs.annotations.version}</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
@@ -80,7 +97,7 @@
       <plugin>
         <groupId>com.github.ekryd.sortpom</groupId>
         <artifactId>sortpom-maven-plugin</artifactId>
-        <version>3.4.0</version>
+        <version>${sortpom.version}</version>
         <configuration>
           <createBackupFile>false</createBackupFile>
         </configuration>
@@ -95,12 +112,12 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.5.3</version>
+        <version>${surefire.version}</version>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-eclipse-plugin</artifactId>
-        <version>2.10</version>
+        <version>${eclipse.version}</version>
         <configuration>
           <downloadSources>true</downloadSources>
           <downloadJavadocs>true</downloadJavadocs>
@@ -109,7 +126,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.5.0</version>
+        <version>${javadoc.version}</version>
         <configuration>
           <attach>true</attach>
           <charset>UTF-8</charset>
@@ -129,7 +146,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-source-plugin</artifactId>
-        <version>2.1.2</version>
+        <version>${source.plugin.version}</version>
         <configuration>
           <attach>true</attach>
         </configuration>
@@ -146,7 +163,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-release-plugin</artifactId>
-        <version>3.0.1</version>
+        <version>${release.plugin.version}</version>
         <configuration>
           <autoVersionSubmodules>true</autoVersionSubmodules>
           <releaseProfiles>release-sign-artifacts</releaseProfiles>
@@ -159,7 +176,7 @@
       <plugin>
         <groupId>org.sonatype.central</groupId>
         <artifactId>central-publishing-maven-plugin</artifactId>
-        <version>0.7.0</version>
+        <version>${central.publishing.version}</version>
         <extensions>true</extensions>
         <configuration>
           <publishingServerId>ossrh</publishingServerId>
@@ -195,7 +212,6 @@
         <version>${spotbugs.version}</version>
         <configuration>
           <xmlOutput>true</xmlOutput>
-          <spotbugsXmlOutput>false</spotbugsXmlOutput>
           <failOnError>false</failOnError>
         </configuration>
         <executions>
@@ -211,7 +227,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-pmd-plugin</artifactId>
-        <version>3.19.0</version>
+        <version>${pmd.version}</version>
         <configuration>
           <failOnViolation>false</failOnViolation>
         </configuration>
@@ -219,7 +235,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
-        <version>3.2.0</version>
+        <version>${checkstyle.version}</version>
         <configuration>
           <failOnViolation>false</failOnViolation>
           <failsOnError>false</failsOnError>
