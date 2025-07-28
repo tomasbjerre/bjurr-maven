@@ -4,7 +4,7 @@
 
   <groupId>se.bjurr.maven</groupId>
   <artifactId>bjurr-maven</artifactId>
-  <version>latest-SNAPSHOT</version>
+  <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Bjurr Maven</name>
   <description>My Maven.</description>
