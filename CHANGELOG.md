@@ -2,6 +2,8 @@
 
 Changelog of bjurr-maven.
 
+## 1.1.2 (2025-07-28)
+
 ## 1.1.1 (2025-07-28)
 
 ### Bug Fixes
