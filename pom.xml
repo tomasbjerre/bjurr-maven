@@ -9,7 +9,7 @@
   <name>Bjurr Maven</name>
   <description>My Maven.</description>
   <url>https://github.com/tomasbjerre/bjurr-maven</url>
-  <inceptionYear>2022</inceptionYear>
+  <inceptionYear>2025</inceptionYear>
 
   <licenses>
     <license>
@@ -35,7 +35,7 @@
 
   <scm>
     <developerConnection>scm:git:git@github.com:tomasbjerre/bjurr-maven.git</developerConnection>
-    <tag>bjurr-maven-0.7.11</tag>
+    <tag>HEAD</tag>
     <url>https://github.com/tomasbjerre/bjurr-maven</url>
   </scm>
 
