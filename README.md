@@ -128,7 +128,7 @@ Release and sign with:
 #!/bin/bash
 
 ./mvnw se.bjurr.gitchangelog:git-changelog-maven-plugin:semantic-version \
-  && git commit -a -m "chore: setting version in pom" && git push || echo "No new version" \
+  && (git commit -a -m "chore: setting version in pom" && git push || echo "No new version") \
   && ./mvnw release:prepare release:perform -B \
   && ./mvnw se.bjurr.gitchangelog:git-changelog-maven-plugin:git-changelog \
   && git commit -a -m "chore: updating changelog" \
@@ -139,5 +139,5 @@ Release and sign with:
 To get signing working, there is a bug, you may need to do this first:
 
 ```sh
-gpg -o /tmp/dummy --sign .gitignore
+gpg -o /tmp/$(date +%s%3N) --sign .gitignore
 ```

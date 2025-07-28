@@ -2,6 +2,13 @@
 
 Changelog of bjurr-maven.
 
+## 1.1.0 (2025-07-28)
+
+### Features
+
+-  triggering minor version ([61e28](https://github.com/tomasbjerre/bjurr-maven/commit/61e28073ecf64ce) Tomas Bjerre)  
+-  triggering minor version ([bdad7](https://github.com/tomasbjerre/bjurr-maven/commit/bdad7d15e3d5dc2) Tomas Bjerre)  
+
 ## 1.0.2 (2025-07-28)
 
 ### Features
