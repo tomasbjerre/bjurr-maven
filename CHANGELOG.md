@@ -2,6 +2,13 @@
 
 Changelog of bjurr-maven.
 
+## 1.1.1 (2025-07-28)
+
+### Bug Fixes
+
+-  removing reference to git changelog plugin ([38765](https://github.com/tomasbjerre/bjurr-maven/commit/38765e6a0839825) Tomas Bjerre)  
+-  removing reference to git changelog plugin ([fb3c8](https://github.com/tomasbjerre/bjurr-maven/commit/fb3c8ce942751fd) Tomas Bjerre)  
+
 ## 1.1.0 (2025-07-28)
 
 ### Features
