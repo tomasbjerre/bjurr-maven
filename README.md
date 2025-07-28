@@ -21,6 +21,14 @@ You may want to use the [Maven wrapper](https://maven.apache.org/wrapper):
 
 ## Update dependencies
 
+Only those set by properties:
+
+```sh
+./mvnw versions:update-properties
+```
+
+All versions:
+
 ```sh
 ./mvnw versions:use-latest-versions \
   -DallowSnapshots=false \
