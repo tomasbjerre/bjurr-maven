@@ -2,6 +2,11 @@
 
 Changelog of bjurr-maven.
 
+## 1.1.5 (2025-07-28)
+
+### Dependency updates
+
+- dependencies ([7634f](https://github.com/tomasbjerre/bjurr-maven/commit/7634ff3db85338f) Tomas Bjerre)  
 ## 1.1.4 (2025-07-28)
 
 ### Bug Fixes
