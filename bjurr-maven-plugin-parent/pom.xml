@@ -13,9 +13,9 @@
   <description>Maven plugin.</description>
 
   <properties>
-    <bjurr-plugin-name>git-changelog-maven-plugin</bjurr-plugin-name>
-    <bjurr-plugin-helpPackageName>gitchangelog.helpmojo</bjurr-plugin-helpPackageName>
-    <bjurr-plugin-help-execution-id>gitchangelog-goal</bjurr-plugin-help-execution-id>
+    <bjurr-plugin-name>changeme-maven-plugin</bjurr-plugin-name>
+    <bjurr-plugin-helpPackageName>changeme.helpmojo</bjurr-plugin-helpPackageName>
+    <bjurr-plugin-help-execution-id>changeme-goal</bjurr-plugin-help-execution-id>
   </properties>
 
   <dependencies>
