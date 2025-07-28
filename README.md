@@ -43,7 +43,7 @@ As a parent in a library:
 ```xml
 <parent>
     <groupId>se.bjurr.maven</groupId>
-    <artifactId>bjurr-maven-library-parent</artifactId>
+    <artifactId>bjurr-maven-parent</artifactId>
     <version>X</version>
 </parent>
 ```
@@ -56,19 +56,11 @@ As a parent in a Maven plugin:
     <artifactId>bjurr-maven-plugin-parent</artifactId>
     <version>X</version>
 </parent>
+
+<packaging>maven-plugin</packaging>
 ```
 
-Optionally configure plugin with these properties.
-
-```xml
-<properties>
-    <bjurr-plugin-name>changeme-maven-plugin</bjurr-plugin-name>
-    <bjurr-plugin-helpPackageName>changeme.helpmojo</bjurr-plugin-helpPackageName>
-    <bjurr-plugin-help-execution-id>changeme-goal</bjurr-plugin-help-execution-id>
-</properties>
-```
-
-Optionally configure plugin with the plugin plugin.
+Configure plugin with the plugin plugin.
 
 ```xml
 <build>

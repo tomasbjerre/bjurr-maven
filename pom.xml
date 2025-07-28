@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>se.bjurr.maven</groupId>
-  <artifactId>bjurr-maven</artifactId>
+  <artifactId>bjurr-maven-parent</artifactId>
   <version>1.1.4-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Bjurr Maven</name>
@@ -30,7 +30,6 @@
 
   <modules>
     <module>bjurr-maven-plugin-parent</module>
-    <module>bjurr-maven-library-parent</module>
   </modules>
 
   <scm>
@@ -60,6 +59,7 @@
     <violations.maxViolations>0</violations.maxViolations>
     <spotbugs.version>4.7.3.0</spotbugs.version>
   </properties>
+mvn versions:display-dependency-updates
 
   <dependencies>
     <dependency>

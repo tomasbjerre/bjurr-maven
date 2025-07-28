@@ -3,20 +3,14 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>se.bjurr.maven</groupId>
-    <artifactId>bjurr-maven</artifactId>
+    <artifactId>bjurr-maven-parent</artifactId>
     <version>1.1.4-SNAPSHOT</version>
   </parent>
 
   <artifactId>bjurr-maven-plugin-parent</artifactId>
-  <packaging>maven-plugin</packaging>
+  <packaging>pom</packaging>
   <name>bjurr-maven-plugin-parent</name>
   <description>Maven plugin.</description>
-
-  <properties>
-    <bjurr-plugin-name>changeme-maven-plugin</bjurr-plugin-name>
-    <bjurr-plugin-helpPackageName>changeme.helpmojo</bjurr-plugin-helpPackageName>
-    <bjurr-plugin-help-execution-id>changeme-goal</bjurr-plugin-help-execution-id>
-  </properties>
 
   <dependencies>
     <dependency>
@@ -43,33 +37,4 @@
       <version>4.0.2</version>
     </dependency>
   </dependencies>
-
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-plugin-plugin</artifactId>
-        <version>3.6.4</version>
-        <configuration>
-          <goalPrefix>${bjurr-plugin-name}</goalPrefix>
-          <skipErrorNoDescriptorsFound>true</skipErrorNoDescriptorsFound>
-          <helpPackageName>${bjurr-plugin-helpPackageName}</helpPackageName>
-        </configuration>
-        <executions>
-          <execution>
-            <id>mojo-descriptor</id>
-            <goals>
-              <goal>descriptor</goal>
-            </goals>
-          </execution>
-          <execution>
-            <id>${bjurr-plugin-help-execution-id}</id>
-            <goals>
-              <goal>helpmojo</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-    </plugins>
-  </build>
 </project>
