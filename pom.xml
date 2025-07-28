@@ -53,7 +53,7 @@
     <maven.compiler.target>11</maven.compiler.target>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.parameters>true</maven.compiler.parameters>
-    <changelog.version>1.100.6</changelog.version>
+    <changelog.version>2.2.8</changelog.version>
     <gpg.version>3.0.1</gpg.version>
     <fmt.version>2.20</fmt.version>
     <violations.version>1.50.8</violations.version>
@@ -151,7 +151,20 @@
         <configuration>
           <autoVersionSubmodules>true</autoVersionSubmodules>
           <releaseProfiles>release-sign-artifacts</releaseProfiles>
-          <checkModificationExcludeList>pom.xml</checkModificationExcludeList>
+          <goals>deploy</goals>
+          <checkModificationExcludes>
+            <checkModificationExclude>pom.xml</checkModificationExclude>
+          </checkModificationExcludes>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.sonatype.central</groupId>
+        <artifactId>central-publishing-maven-plugin</artifactId>
+        <version>0.7.0</version>
+        <extensions>true</extensions>
+        <configuration>
+          <publishingServerId>ossrh</publishingServerId>
+          <autoPublish>true</autoPublish>
         </configuration>
       </plugin>
       <plugin>
