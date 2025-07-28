@@ -2,6 +2,12 @@
 
 Changelog of bjurr-maven.
 
+## 1.0.1 (2025-07-28)
+
+### Bug Fixes
+
+-  publishing ([45366](https://github.com/tomasbjerre/bjurr-maven/commit/45366e7520230ac) Tomas Bjerre)  
+
 ## 1.0.0 (2025-07-28)
 
 ### Breaking changes
@@ -307,6 +313,9 @@ Changelog of bjurr-maven.
 -  testing ([eef47](https://github.com/tomasbjerre/bjurr-maven/commit/eef47346f1f3eed) Tomas Bjerre)  
 
 ## 0.0.3 (2022-12-04)
+
+### Other changes
+
 
 ## 0.0.1 (2022-12-04)
 
