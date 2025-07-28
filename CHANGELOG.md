@@ -2,6 +2,12 @@
 
 Changelog of bjurr-maven.
 
+## 1.1.4 (2025-07-28)
+
+### Bug Fixes
+
+-  packaging as pom ([2466a](https://github.com/tomasbjerre/bjurr-maven/commit/2466a3b726f9d37) Tomas Bjerre)  
+
 ## 1.1.3 (2025-07-28)
 
 ### Bug Fixes
