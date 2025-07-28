@@ -52,12 +52,12 @@
     <maven.compiler.target>11</maven.compiler.target>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.parameters>true</maven.compiler.parameters>
-    <changelog.version>2.2.8</changelog.version>
+    <changelog.version>2.2.10</changelog.version>
     <gpg.version>3.0.1</gpg.version>
-    <fmt.version>2.20</fmt.version>
-    <violations.version>1.50.8</violations.version>
+    <fmt.version>2.27</fmt.version>
+    <violations.version>2.2.7</violations.version>
     <violations.maxViolations>0</violations.maxViolations>
-    <spotbugs.version>4.7.3.0</spotbugs.version>
+    <spotbugs.version>4.9.3.2</spotbugs.version>
   </properties>
 
   <dependencies>
