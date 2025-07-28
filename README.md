@@ -51,6 +51,49 @@ As a parent in a Maven plugin:
 </parent>
 ```
 
+Optionally configure plugin with these properties.
+
+```xml
+<properties>
+    <bjurr-plugin-name>changeme-maven-plugin</bjurr-plugin-name>
+    <bjurr-plugin-helpPackageName>changeme.helpmojo</bjurr-plugin-helpPackageName>
+    <bjurr-plugin-help-execution-id>changeme-goal</bjurr-plugin-help-execution-id>
+</properties>
+```
+
+Optionally configure plugin with the plugin plugin.
+
+```xml
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-plugin-plugin</artifactId>
+            <version>3.6.4</version>
+            <configuration>
+                <goalPrefix>changeme-maven-plugin</goalPrefix>
+                <skipErrorNoDescriptorsFound>true</skipErrorNoDescriptorsFound>
+                <helpPackageName>changeme.helpmojo</helpPackageName>
+            </configuration>
+            <executions>
+                <execution>
+                    <id>mojo-descriptor</id>
+                    <goals>
+                        <goal>descriptor</goal>
+                    </goals>
+                </execution>
+                <execution>
+                    <id>changeme-goal</id>
+                    <goals>
+                        <goal>helpmojo</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+</build>
+```
+
 ## Static code analysis
 
 Spotbugs is bundled. Violations can be ignored with `@SuppressFBWarnings`. Also [Violations Maven Plugin](https://github.com/tomasbjerre/violations-maven-plugin) is used to present, and fail build based on, violations.
