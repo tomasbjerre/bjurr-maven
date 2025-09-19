@@ -2,6 +2,12 @@
 
 Changelog of bjurr-maven.
 
+## 1.1.7 (2025-09-19)
+
+### Dependency updates
+
+- assertj 3.9.11 ([6b0da](https://github.com/tomasbjerre/bjurr-maven/commit/6b0da4f14a615ed) Tomas Bjerre)  
+- updates ([3ff9c](https://github.com/tomasbjerre/bjurr-maven/commit/3ff9ce98613481b) Tomas Bjerre)  
 ## 1.1.6 (2025-07-28)
 
 ### Dependency updates
