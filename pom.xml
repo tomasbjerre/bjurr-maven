@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>se.bjurr.maven</groupId>
@@ -53,7 +54,7 @@
     <maven.compiler.parameters>true</maven.compiler.parameters>
 
     <!-- Dependency Versions -->
-    <assertj.version>3.9.11</assertj.version>
+    <assertj.version>3.27.5</assertj.version>
     <spotbugs.annotations.version>4.9.6</spotbugs.annotations.version>
 
     <!-- Plugin Versions -->
