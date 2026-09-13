@@ -1,6 +1,6 @@
 # Bjurr Maven
 
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/se.bjurr.maven/bjurr-maven/badge.svg)](https://maven-badges.herokuapp.com/maven-central/se.bjurr.maven/bjurr-maven)
+[![Maven Central](https://img.shields.io/maven-central/v/se.bjurr.maven/bjurr-maven.svg?label=Maven%20Central)](https://search.maven.org/artifact/se.bjurr.maven/bjurr-maven)
 
 Common Maven settings for my projects.
 
