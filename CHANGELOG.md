@@ -1,3 +1,30 @@
+## 1.2.0 (2026-09-14)
+
+### Features
+
+-  **ci**  add draft/publish release workflow ([0c9db](https://github.com/tomasbjerre/bjurr-maven/commit/0c9dbc33b759699) Tomas Bjerre)  
+
+### Bug Fixes
+
+-  removing git-changelog-maven-plugin from pom to avoid snapshot to be set during release ([353ca](https://github.com/tomasbjerre/bjurr-maven/commit/353ca265b02fec9) Tomas Bjerre)  
+
+### Other changes
+
+**Fix broken Maven Central badge in README**
+
+* maven-badges.herokuapp.com is down; switch to img.shields.io badge 
+* linking to search.maven.org. 
+* Co-Authored-By: Claude Sonnet 5 &lt;noreply@anthropic.com&gt; 
+* Claude-Session: https://claude.ai/code/session_011PGVf85V1VhJj4oM3rKh7b 
+
+[aaef0](https://github.com/tomasbjerre/bjurr-maven/commit/aaef04ea400502f) Tomas Bjerre *2026-09-13 08:52:01*
+
+**[maven-release-plugin] prepare for next development iteration**
+
+
+[95fea](https://github.com/tomasbjerre/bjurr-maven/commit/95fea8d3ea89c91) Tomas Bjerre *2025-09-19 17:34:11*
+
+
 # bjurr-maven changelog
 
 Changelog of bjurr-maven.
