@@ -1,3 +1,42 @@
+## 1.2.1 (2026-09-15)
+
+### Bug Fixes
+
+-  add missing Maven CI workflow ([52684](https://github.com/tomasbjerre/bjurr-maven/commit/526844ad0cefdac) Tomas Bjerre)  
+
+### Dependency updates
+
+- update dependency org.codehaus.plexus:plexus-utils to v4.1.0 (#15) ([372f4](https://github.com/tomasbjerre/bjurr-maven/commit/372f4d35057dc6a) renovate[bot])  
+- update dependency se.bjurr.violations:violations-maven-plugin to v3.3.0 (#18) ([3c92d](https://github.com/tomasbjerre/bjurr-maven/commit/3c92df794a7cf3e) renovate[bot])  
+- update dependency org.apache.maven.plugins:maven-release-plugin to v3.3.1 (#12) ([2918f](https://github.com/tomasbjerre/bjurr-maven/commit/2918f4db82d2638) renovate[bot])  
+- update dependency org.apache.maven.plugins:maven-pmd-plugin to v3.28.0 (#11) ([3bf1e](https://github.com/tomasbjerre/bjurr-maven/commit/3bf1ea32e6167f4) renovate[bot])  
+- update dependency org.apache.maven.plugins:maven-javadoc-plugin to v3.12.0 (#10) ([ec19c](https://github.com/tomasbjerre/bjurr-maven/commit/ec19c8617959bd8) renovate[bot])  
+- update dependency com.github.spotbugs:spotbugs-annotations to v4.10.4 (#6) ([0d3ad](https://github.com/tomasbjerre/bjurr-maven/commit/0d3ad6b237058b2) renovate[bot])  
+- update dependency se.bjurr.maven:bjurr-maven-parent to v1.2.0 (#17) ([eeccf](https://github.com/tomasbjerre/bjurr-maven/commit/eeccf6dfce4096a) renovate[bot])  
+- update dependency org.sonatype.central:central-publishing-maven-plugin to v0.11.0 (#16) ([7a298](https://github.com/tomasbjerre/bjurr-maven/commit/7a29855add3f92c) renovate[bot])  
+- update dependency org.apache.maven.plugins:maven-surefire-plugin to v3.6.0 (#14) ([b3a3c](https://github.com/tomasbjerre/bjurr-maven/commit/b3a3ca7a33d8d2d) renovate[bot])  
+- update dependency org.apache.maven.plugins:maven-source-plugin to v3.4.0 (#13) ([1164b](https://github.com/tomasbjerre/bjurr-maven/commit/1164b239f5e7a61) renovate[bot])  
+- update dependency org.apache.maven.plugins:maven-gpg-plugin to v3.2.8 (#9) ([43a4e](https://github.com/tomasbjerre/bjurr-maven/commit/43a4ed32594013c) renovate[bot])  
+- update dependency org.apache.maven.plugin-tools:maven-plugin-annotations to v3.16.0 (#8) ([a50de](https://github.com/tomasbjerre/bjurr-maven/commit/a50def642119c4a) renovate[bot])  
+- update dependency com.github.spotbugs:spotbugs-maven-plugin to v4.10.4.1 (#7) ([f6771](https://github.com/tomasbjerre/bjurr-maven/commit/f6771d4c0154b2d) renovate[bot])  
+- update dependency org.assertj:assertj-core to v3.27.7 (#5) ([ba9d6](https://github.com/tomasbjerre/bjurr-maven/commit/ba9d66916f9f61b) renovate[bot])  
+- update dependency org.apache.maven:maven-plugin-api to v3.9.16 (#4) ([613fe](https://github.com/tomasbjerre/bjurr-maven/commit/613fe87dfe81fed) renovate[bot])  
+- update dependency org.apache.maven:maven-core to v3.9.16 (#3) ([992b5](https://github.com/tomasbjerre/bjurr-maven/commit/992b594c1f64e81) renovate[bot])  
+- update dependency maven-wrapper to v3.3.4 (#2) ([b021f](https://github.com/tomasbjerre/bjurr-maven/commit/b021fbeae950694) renovate[bot])  
+- update dependency maven to v3.9.16 (#1) ([018ea](https://github.com/tomasbjerre/bjurr-maven/commit/018eace9bf68dd6) renovate[bot])  
+### Other changes
+
+**Superseded by centralized publish-draft-releases.yaml in .github**
+
+
+[116a4](https://github.com/tomasbjerre/bjurr-maven/commit/116a4f6307e7953) Tomas Bjerre *2026-09-14 19:58:32*
+
+**Auto-publish pending draft releases weekly**
+
+
+[ec8b3](https://github.com/tomasbjerre/bjurr-maven/commit/ec8b3fde3dcfbaa) Tomas Bjerre *2026-09-14 19:47:33*
+
+
 ## 1.2.0 (2026-09-14)
 
 ### Features
