@@ -15,7 +15,7 @@
     <maven.plugin.api.version>3.9.16</maven.plugin.api.version>
     <maven.core.version>3.9.16</maven.core.version>
     <maven.plugin.annotations.version>3.16.0</maven.plugin.annotations.version>
-    <plexus.utils.version>4.0.2</plexus.utils.version>
+    <plexus.utils.version>4.1.0</plexus.utils.version>
   </properties>
 
   <dependencies>
