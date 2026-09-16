@@ -14,7 +14,7 @@ jobs:
       - uses: actions/setup-java@v6
         with:
           distribution: temurin
-          java-version: "11"
+          java-version: "26"
 
       - name: Update properties
         run: ./mvnw --batch-mode "-Dmaven.version.ignore=(?i).*[-.](alpha|beta|rc|cr|m|milestone)[-.]?\d*$" versions:update-properties
