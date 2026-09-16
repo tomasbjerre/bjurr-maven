@@ -3,7 +3,10 @@
   "packageRules": [
     {
       "matchManagers": ["maven"],
-      "matchPackageNames": ["se.bjurr.violations:violations-maven-plugin"],
+      "matchPackageNames": [
+        "se.bjurr.violations:violations-maven-plugin",
+        "se.bjurr.maven:bjurr-maven-parent"
+      ],
       "enabled": false
     }
   ]
