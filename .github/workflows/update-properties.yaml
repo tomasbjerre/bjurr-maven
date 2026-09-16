@@ -25,6 +25,6 @@ jobs:
         uses: peter-evans/create-pull-request@v6
         with:
           commit-message: "build: update maven properties"
-          title: "build: update maven properties"
+          title: "chore(deps): update maven properties"
           branch: update-properties
           delete-branch: true
