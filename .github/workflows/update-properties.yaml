@@ -3,17 +3,13 @@ name: Update Properties
 on:
   workflow_dispatch: {}
 
-permissions:
-  contents: write
-  pull-requests: write
-
 jobs:
   update-properties:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
         with:
-          persist-credentials: false
+          token: ${{ secrets.RELEASE_PAT }}
 
       - uses: actions/setup-java@v6
         with:
@@ -21,12 +17,16 @@ jobs:
           java-version: "11"
 
       - name: Update properties
-        run: ./mvnw --batch-mode versions:update-properties
+        run: ./mvnw --batch-mode -Dmaven.version.rules=file://$PWD/.mvn/version-rules.xml versions:update-properties
 
-      - name: Create pull request
-        uses: peter-evans/create-pull-request@v6
-        with:
-          commit-message: "build: update maven properties"
-          title: "chore(deps): update maven properties"
-          branch: update-properties
-          delete-branch: true
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git add -A
+          git commit -m "chore(deps): update maven properties"
+          git push
