@@ -82,7 +82,7 @@
     <checkstyle.version>3.6.0</checkstyle.version>
     <violations.version>3.3.0</violations.version>
     <gpg.version>3.2.8</gpg.version>
-    <flatten.version>1.6.0</flatten.version>
+    <flatten.version>1.8.0</flatten.version>
 
     <!-- Other Properties -->
     <violations.maxViolations>0</violations.maxViolations>
