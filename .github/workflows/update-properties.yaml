@@ -17,7 +17,7 @@ jobs:
           java-version: "11"
 
       - name: Update properties
-        run: ./mvnw --batch-mode -Dmaven.version.rules=file://$PWD/.mvn/version-rules.xml versions:update-properties
+        run: ./mvnw --batch-mode "-Dmaven.version.ignore=(?i).*[-.](alpha|beta|rc|cr|m|milestone)[-.]?\d*$" versions:update-properties
 
       - name: Commit and push
         run: |
