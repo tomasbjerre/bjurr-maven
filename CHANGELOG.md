@@ -1,3 +1,43 @@
+## 1.2.2 (2026-09-16)
+
+### Bug Fixes
+
+-  avoid infinite update loop with violations-maven-loop ([844a5](https://github.com/tomasbjerre/bjurr-maven/commit/844a5159a5059ec) Tomas Bjerre)  
+
+### Dependency updates
+
+- update dependency org.codehaus.mojo:flatten-maven-plugin to v1.8.0 (#22) ([909d5](https://github.com/tomasbjerre/bjurr-maven/commit/909d52ffd4ecf55) renovate[bot])  
+- update dependency se.bjurr.maven:bjurr-maven-parent to v1.2.1 (#19) ([0bbf3](https://github.com/tomasbjerre/bjurr-maven/commit/0bbf3d5191d9518) renovate[bot])  
+### Other changes
+
+**Apply patch: Update to CI-friendly Maven versioning**
+
+
+[66f6e](https://github.com/tomasbjerre/bjurr-maven/commit/66f6e2c21023baf) Tomas Bjerre *2026-09-16 05:59:11*
+
+**Apply patch: Update to CI-friendly Maven versioning**
+
+
+[1948b](https://github.com/tomasbjerre/bjurr-maven/commit/1948b442819f0d2) Tomas Bjerre *2026-09-16 05:58:39*
+
+**Apply patch: Update to CI-friendly Maven versioning**
+
+
+[47e51](https://github.com/tomasbjerre/bjurr-maven/commit/47e519f97335edc) Tomas Bjerre *2026-09-16 05:58:27*
+
+**Merge pull request #21 from tomasbjerre/tomasbjerre-patch-2**
+
+* chore: docs 
+
+[a903b](https://github.com/tomasbjerre/bjurr-maven/commit/a903bba9203d0d4) Tomas Bjerre *2026-09-16 05:48:59*
+
+**Merge pull request #20 from tomasbjerre/tomasbjerre-patch-1**
+
+* fix: avoid infinite update loop with violations-maven-loop 
+
+[34363](https://github.com/tomasbjerre/bjurr-maven/commit/343636e7bb4ed21) Tomas Bjerre *2026-09-16 05:31:24*
+
+
 ## 1.2.1 (2026-09-15)
 
 ### Bug Fixes
