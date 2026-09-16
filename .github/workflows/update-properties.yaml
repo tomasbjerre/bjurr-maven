@@ -5,6 +5,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   update-properties:
@@ -20,14 +21,10 @@ jobs:
       - name: Update properties
         run: ./mvnw --batch-mode versions:update-properties
 
-      - name: Commit and push
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet; then
-            echo "No changes to commit"
-            exit 0
-          fi
-          git add -A
-          git commit -m "build: update maven properties"
-          git push
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "build: update maven properties"
+          title: "build: update maven properties"
+          branch: update-properties
+          delete-branch: true
