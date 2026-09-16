@@ -1,6 +1,6 @@
 # Bjurr Maven
 
-[![Maven Central](https://img.shields.io/maven-central/v/se.bjurr.maven/bjurr-maven.svg?label=Maven%20Central)](https://central.sonatype.com/artifact/se.bjurr.maven/bjurr-maven)
+[![Maven Central](https://img.shields.io/maven-central/v/se.bjurr.maven/bjurr-maven-plugin-parent.svg?label=Maven%20Central)](https://central.sonatype.com/artifact/se.bjurr.maven/bjurr-maven-plugin-parent)
 
 Common Maven settings for my projects.
 
