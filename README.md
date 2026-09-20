@@ -6,7 +6,7 @@ Common Maven settings for my projects.
 
 ## Get Maven
 
-You may want to use the [Maven wrapper](https://maven.apache.org/wrapper):
+You may want to use the [Maven wrapper](https://maven.apache.org/wrapper/):
 
 ```sh
 ./mvnw wrapper:wrapper -Dmaven=3.8.1
