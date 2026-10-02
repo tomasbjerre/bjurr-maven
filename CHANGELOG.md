@@ -1,3 +1,30 @@
+## 1.2.3 (2026-09-20)
+
+### Bug Fixes
+
+-  **ci**  ignore pre-release qualifiers in update-properties workflow ([a84fc](https://github.com/tomasbjerre/bjurr-maven/commit/a84fc16667f44c3) Tomas Bjerre)  
+-  **ci**  avoid duplicate auth header in update-properties workflow ([db1e3](https://github.com/tomasbjerre/bjurr-maven/commit/db1e33c66ea824a) Tomas Bjerre)  
+
+### Dependency updates
+
+- update dependency java-jdk to v26 (#27) ([98268](https://github.com/tomasbjerre/bjurr-maven/commit/982689a0567e7b2) renovate[bot])  
+- update actions/setup-java action to v6 (#24) ([1f6da](https://github.com/tomasbjerre/bjurr-maven/commit/1f6daaf1f927912) renovate[bot])  
+- update actions/checkout action to v7 (#23) ([e34ab](https://github.com/tomasbjerre/bjurr-maven/commit/e34abfbe12b40ba) renovate[bot])  
+### Other changes
+
+**Merge pull request #28 from tomasbjerre/fix/readme-links**
+
+* docs: fix broken maven wrapper docs link 
+
+[3203b](https://github.com/tomasbjerre/bjurr-maven/commit/3203b84047989f3) Tomas Bjerre *2026-09-20 18:21:21*
+
+**Merge pull request #25 from tomasbjerre/tomasbjerre-patch-3**
+
+* chore: workflow update properties 
+
+[96478](https://github.com/tomasbjerre/bjurr-maven/commit/96478728e2d88b2) Tomas Bjerre *2026-09-16 15:37:22*
+
+
 ## 1.2.2 (2026-09-16)
 
 ### Bug Fixes
