@@ -69,7 +69,7 @@
 
     <!-- Plugin Versions -->
     <sortpom.version>4.0.0</sortpom.version>
-    <surefire.version>3.6.0</surefire.version>
+    <surefire.version>3.6.1</surefire.version>
     <eclipse.version>2.10</eclipse.version>
     <javadoc.version>3.12.0</javadoc.version>
     <source.plugin.version>3.4.0</source.plugin.version>
