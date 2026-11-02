@@ -1,3 +1,14 @@
+## 1.2.4 (2026-10-27)
+
+### Dependency updates
+
+- update dependency org.apache.maven.plugins:maven-surefire-plugin to v3.6.1 (#35) ([ed06b](https://github.com/tomasbjerre/bjurr-maven/commit/ed06b4bea862727) renovate[bot])  
+- update dependency org.sonatype.central:central-publishing-maven-plugin to v0.12.0 (#34) ([018b6](https://github.com/tomasbjerre/bjurr-maven/commit/018b630f1fc0f29) renovate[bot])  
+- update dependency com.github.spotbugs:spotbugs-maven-plugin to v4.10.5.0 (#33) ([55d5e](https://github.com/tomasbjerre/bjurr-maven/commit/55d5e8d3d9574f6) renovate[bot])  
+- update dependency com.github.spotbugs:spotbugs-annotations to v4.10.5 (#32) ([54c08](https://github.com/tomasbjerre/bjurr-maven/commit/54c08b978d4a767) renovate[bot])  
+- update dependency org.apache.maven:maven-plugin-api to v3.10.0 (#31) ([63337](https://github.com/tomasbjerre/bjurr-maven/commit/63337be3bab73df) renovate[bot])  
+- update dependency org.apache.maven:maven-core to v3.10.0 (#30) ([401f9](https://github.com/tomasbjerre/bjurr-maven/commit/401f9c17d9bd001) renovate[bot])  
+- update dependency maven to v3.10.0 (#29) ([f659c](https://github.com/tomasbjerre/bjurr-maven/commit/f659cc214b7ae4c) renovate[bot])  
 ## 1.2.3 (2026-09-20)
 
 ### Bug Fixes
